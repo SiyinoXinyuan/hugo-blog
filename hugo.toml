@@ -1,0 +1,134 @@
+baseURL = 'https://blog.daiyousei.moe/'
+languageCode = 'zh-cn'
+title = "思忆の心愿的博客"
+theme = 'hugo-theme-stack'
+copyright = 'DAIYOUSEI.MOE | SIYINOXINYUAN | 思忆の心愿'
+
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+
+[permalinks]
+post = '/p/:slug/'
+page = '/:slug/'
+
+[params]
+mainSections = ['post']
+featuredImageField = 'image'
+rssFullContent = true
+favicon = '/favicon.ico'
+
+# footer
+[params.footer]
+since = '2023'
+customText = '本站大部分文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"><b>CC BY-NC-SA 4.0</b></a> 协议进行许可，转载时请注明出处<br>其他情况请依据文章底部许可声明进行使用'
+
+# date format
+[params.dateFormat]
+published = '2006年01月02日 15:04:05'
+lastupdated = '2006年01月02日 15:04:05'
+
+# Sidebar
+[params.sidebar]
+emoji = '😭'
+subtitle = '……'
+
+[params.sidebar.avatar]
+enabled = true
+local = true
+# image need put in asstes folder
+src = 'avatar.jpg'
+
+# Article
+[params.article]
+math = false
+toc = true
+readingTime = true
+
+[params.article.license]
+enabled = true
+default = 'CC BY-NC-SA 4.0'
+
+# comments
+[params.comments]
+enabled = true
+provider = 'giscus'
+
+[params.comments.giscus]
+owner = 'SiyinoXinyuan'
+admin = 'SiyinoXinyuan'
+repo = 'siyinoxinyuan/blog-comments'
+repoId = 'R_kgDOOcNT7A'
+category = 'Announcements'
+categoryId = 'DIC_kwDOOcNT7M4CpQcY'
+lang = 'zh-CN'
+
+# opengraph
+[params.opengraph.twitter]
+site = 'SiyinoXinyuan'
+card = 'summary_large_image'
+
+[params.defaultImage.opengraph]
+enabled = false
+local = false
+src = ''
+
+# colorscheme
+[params.colorscheme]
+toggle = true
+default = 'auto'
+
+# Widgets
+[[params.widgets.homepage]]
+type = 'search'
+
+[[params.widgets.homepage]]
+type = 'archives'
+
+[params.widgets.homepage.params]
+limit = 5
+
+[[params.widgets.homepage]]
+type = 'categories'
+
+[params.widgets.homepage.params]
+limit = 10
+
+[[params.widgets.homepage]]
+type = 'tag-cloud'
+
+[params.widgets.homepage.params]
+limit = 10
+
+[[params.widgets.page]]
+type = 'toc'
+# Markdown renderer configuration
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.extension.passtrough]
+enabled = true
+
+# LaTeX math support
+# https://gohugo.io/content-management/mathematics/
+[markup.goldmark.extension.passtrough.delimiter]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
+
+# toc level and order
+[markup.tableOfContents]
+endLevel = 4
+ordered = true
+startLevel = 2
+
+# codeblock highlight
+[markup.highlight]
+anchorLineNos = true
+codeFences = true
+guessSyntax = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+noClasses = false
+style = 'monokai'
+tabWidth = 4
