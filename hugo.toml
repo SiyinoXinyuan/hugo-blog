@@ -56,10 +56,10 @@ provider = 'giscus'
 [params.comments.giscus]
 owner = 'SiyinoXinyuan'
 admin = 'SiyinoXinyuan'
-repo = 'siyinoxinyuan/blog-comments'
-repoId = 'R_kgDOOcNT7A'
+repo = 'siyinoxinyuan/hugo-blog'
+repoId = 'R_kgDOOcp3oA'
 category = 'Announcements'
-categoryId = 'DIC_kwDOOcNT7M4CpQcY'
+categoryId = 'DIC_kwDOOcp3oM4CpSGG'
 lang = 'zh-CN'
 
 # opengraph
