@@ -1,0 +1,5 @@
+caution = '危险'
+important = '重要'
+note = '注意'
+tip = '提示'
+warning = '警告'
