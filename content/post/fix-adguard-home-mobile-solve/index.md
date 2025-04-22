@@ -87,4 +87,6 @@ categories = [
 
 ![端口转发高级设置](port-forward-advance.png)
 
-> 由于本人的整套解析链均未在openwrt上部署，所以需要关闭openwrt的dns重定向，防止上述配置失效
+> [!NOTE]
+> 由于本人的整套解析链均未在openwrt上部署，所以关闭了openwrt的dns重定向防止上述配置失效。  
+> 请读者根据实际运行环境情况进行调整。
