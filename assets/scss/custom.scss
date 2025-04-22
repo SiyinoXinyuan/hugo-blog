@@ -16,16 +16,24 @@
 // alert blockquote
 // refenence: https://tom2almighty.github.io/hugo-blog-diary/posts/hugo-alert-blockquote/
 
+$alert-colors: (
+    note: (#0969da, #58a6ff),
+    tip: (#1a7f37, #3fb950),
+    important: (#8250df, #a371f7),
+    warning: (#9a6700, #d29922),
+    caution: (#cf222e, #f85149)
+);
+
 .alert-blockquote {
     * {
         color: inherit !important;
     }
 
     p {
-        &:first-child{
+        &:first-child {
             margin-block-end: 0 !important;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
             margin-block-start: 0 !important;
         }
     }
@@ -34,7 +42,7 @@
         display: flex !important;
         align-items: center !important;
         font-weight: 600 !important;
-        margin-bottom: .5rem !important;
+        margin-bottom: 0.5rem !important;
 
         svg {
             width: 1em !important;
@@ -44,81 +52,23 @@
         }
     }
 
-    &.alert-note {
-        border-left-color: #0969da !important;
+    // 动态生成样式
+    @each $type, $colors in $alert-colors {
+        &.alert-#{$type} {
+            border-left-width: 4px !important;
+            border-left-style: solid !important;
+            border-left-color: nth($colors, 1) !important;
 
-        .alert-heading {
-            color: #0969da !important;
-        }
-    }
-
-    &.alert-tip {
-        border-left-color: #1a7f37 !important;
-
-        .alert-heading {
-            color: #1a7f37 !important;
-        }
-    }
-
-    &.alert-important {
-        border-left-color: #8250df !important;
-
-        .alert-heading {
-            color: #8250df !important;
-        }
-    }
-
-    &.alert-warning {
-        border-left-color: #9a6700 !important;
-
-        .alert-heading {
-            color: #9a6700 !important;
-        }
-    }
-
-    &.alert-caution {
-        border-left-color: #cf222e !important;
-
-        .alert-heading {
-            color: #cf222e !important;
-        }
-    }
-}
-
-[data-scheme=dark] {
-    .alert-blockquote {
-        &.alert-note {
-            border-left-color: #58a6ff !important;
-            .alert-heading {
-                color: #58a6ff !important;
+            [data-scheme="dark"] & {
+                border-left-color: nth($colors, 2) !important;
             }
-        }
 
-        &.alert-tip {
-            border-left-color: #3fb950 !important;
             .alert-heading {
-                color: #3fb950 !important;
-            }
-        }
+                color: nth($colors, 1) !important;
 
-        &.alert-important {
-            border-left-color: #a371f7 !important;
-            .alert-heading {
-                color: #a371f7 !important;
-            }
-        }
-
-        &.alert-warning {
-            border-left-color: #d29922 !important;
-            .alert-heading {
-                color: #d29922 !important;
-            }
-        }
-
-        &.alert-caution {
-            border-left-color: #f85149 !important;
-            .alert-heading {
-                color: #f85149 !important;
+                [data-scheme="dark"] & {
+                    color: nth($colors, 2) !important;
+                }
             }
         }
     }
