@@ -13,7 +13,17 @@ categories = [
     '分类',
 ]
 +++
-## 警报块
+## 折叠
+
+<details>
+<summary>点击查看代码</summary>
+
+```java
+System.out.println("Hello to see U!");
+```
+</details>
+
+## 引用与警报块
 
 > 标准引用块  
 > 第二行
