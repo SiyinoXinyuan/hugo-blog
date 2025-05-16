@@ -46,7 +46,7 @@ categories = [
 点击 `Start Logging to Disk` 开始记录，新建页面并访问有问题的网站  
 回到日志记录页面，点击 `Stop Logging` ，点击 `Email Log` ，将日志发送到电脑上  
 
-![开始记录](https://r2-static.daiyousei.moe/5d5783f265c7589a55838072f6d15db8dde2e976.jpg) ![停止记录](https://r2-static.daiyousei.moe/5bd212a7cb68a779991dc7e190ee49006639bf99.jpg) ![发送日志文件]([netlog-capture-email.jpg](https://r2-static.daiyousei.moe/bdab862f13e40337b64859be2d2b2e96c26618b0.jpg))
+![开始记录](https://r2-static.daiyousei.moe/5d5783f265c7589a55838072f6d15db8dde2e976.jpg) ![停止记录](https://r2-static.daiyousei.moe/5bd212a7cb68a779991dc7e190ee49006639bf99.jpg) ![发送日志文件](https://r2-static.daiyousei.moe/bdab862f13e40337b64859be2d2b2e96c26618b0.jpg)
 
 在电脑上的浏览器地址栏输入 `chrome://net-internal` ，点击 `netlog_viewer` 链接，进入日志解析网站  
 上传发送到电脑的日志，选择DNS选项卡  
