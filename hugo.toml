@@ -132,3 +132,10 @@ lineNumbersInTable = true
 noClasses = false
 style = 'monokai'
 tabWidth = 4
+
+
+[params.imageProcessing.content]
+enabled = false
+
+[params.render.image.externalLink]
+enabled = true

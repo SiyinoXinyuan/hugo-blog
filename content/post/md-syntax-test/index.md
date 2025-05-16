@@ -42,3 +42,7 @@ System.out.println("Hello to see U!");
 
 > [!CAUTION]  
 > 关于某些行为的风险或负面结果的建议。
+
+![内链图片测试](background.jpg)
+
+![外链图片测试 @ linux.do](https://linux.do/uploads/default/original/4X/b/8/7/b87a2eb1c6ea7f4b14e07df047ab4a5fa4b0f42a.jpeg)
