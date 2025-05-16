@@ -32,13 +32,13 @@ categories = [
 ### 查询浏览器解析
 在浏览器地址栏输入`chrome://net-internal`，并切换到DNS页面，输入访问出现问题的网站 
  
-![DNS查询结果为错误的IPV4地址](dns-query-result-wrong.jpg)
+![DNS查询结果为错误的IPV4地址](https://r2-static.daiyousei.moe/e2be084271b7c6c1efdf1ea6c9d02c972ab3d98c.jpg)
 
 很显然，这个IP绝对不是通过 Adguard Home 解析出来的  
 
 作为对比，这是使用分流DNS+代理的解析结果  
 
-![DNS查询结果为代理的FakeIP](dns-query-result-correct.jpg)
+![DNS查询结果为代理的FakeIP](https://r2-static.daiyousei.moe/59911734f2f4eadc4a92e79a6975cd17d5303e5a.jpg)
 
 ### 获取浏览器网络日志
 现在需要获取浏览器究竟使用了什么DNS来解析地址  
@@ -46,14 +46,14 @@ categories = [
 点击 `Start Logging to Disk` 开始记录，新建页面并访问有问题的网站  
 回到日志记录页面，点击 `Stop Logging` ，点击 `Email Log` ，将日志发送到电脑上  
 
-![开始记录](netlog-capture-start.jpg) ![停止记录](netlog-capture-stop.jpg) ![发送日志文件](netlog-capture-email.jpg)
+![开始记录](https://r2-static.daiyousei.moe/5d5783f265c7589a55838072f6d15db8dde2e976.jpg) ![停止记录](https://r2-static.daiyousei.moe/5bd212a7cb68a779991dc7e190ee49006639bf99.jpg) ![发送日志文件]([netlog-capture-email.jpg](https://r2-static.daiyousei.moe/bdab862f13e40337b64859be2d2b2e96c26618b0.jpg))
 
 在电脑上的浏览器地址栏输入 `chrome://net-internal` ，点击 `netlog_viewer` 链接，进入日志解析网站  
 上传发送到电脑的日志，选择DNS选项卡  
 
-![日志获取到的浏览器使用的DNS信息](log-dns-query.png) 
+![日志获取到的浏览器使用的DNS信息](https://r2-static.daiyousei.moe/757361224ed0584153d9722280894a1fe8648a12.png) 
 
-![问题网站的解析记录](log-dns-query-detail.png)
+![问题网站的解析记录](https://r2-static.daiyousei.moe/3b1793de095d62f19ef67b803c8d85960129ba69.png)
 
 看见了熟悉的面孔
 
@@ -78,15 +78,17 @@ categories = [
 * 屏蔽114 DNS  
   * `网络 > 防火墙 > 通信规则` 下添加规则，规则内容如下图所示  
 
-![通信规则设置](comrules.png)
+![通信规则设置](https://r2-static.daiyousei.moe/eb5474cd84380e681dea048bd996ef1b375833be.png)
 
 * 转发114 DNS 至 Adguard Home  DNS  
   * `网络 > 防火墙 > 端口转发` 下添加规则，规则内容如下图所示  
 
-![端口转发基本设置](port-forward-basic.png)
+![端口转发基本设置](https://r2-static.daiyousei.moe/2e151214dd7353756a2f6bbe8a72efdb64b3ab51.png)
 
-![端口转发高级设置](port-forward-advance.png)
+![端口转发高级设置](https://r2-static.daiyousei.moe/c46e37e8f9e57821f83429017aaf274f65dd5e91.png)
 
 > [!NOTE]
 > 由于本人的整套解析链均未在openwrt上部署，所以关闭了openwrt的dns重定向防止上述配置失效。  
 > 请读者根据实际运行环境情况进行调整。
+
+

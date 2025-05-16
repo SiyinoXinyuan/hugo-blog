@@ -4,7 +4,7 @@ draft = false
 title = 'Hello Hugo'
 slug = 'hello-hugo'
 description = '默认充数页面（手动创建）'
-image = 'background.jpg'
+image = 'https://r2-static.daiyousei.moe/e6e8d05e859e9c36b749ee44909b6a5d26570d12.jpg'
 tags = [
     '杂项',
 ]
