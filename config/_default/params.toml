@@ -1,0 +1,75 @@
+# Pages placed under these sections will be shown on homepage and archive page.
+mainSections = ["post"]
+# Output page's full content in RSS.
+rssFullContent = true
+favicon        = "img/favicon.png"
+
+# Accepted values: "default", "lastmod"
+# default = see https://gohugo.io/quick-reference/glossary/#default-sort-order
+# lastmod = sort by last modified date, in descending order
+SortBy              = "default"
+
+[footer]
+    since      = 2023
+    customText = '本站大部分文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"><b>CC BY-NC-SA 4.0</b></a> 协议进行许可，转载时请注明出处<br>其他情况请依据文章底部许可声明进行使用'
+
+[dateFormat]
+    published   = "2006年01月02日 15:04:05"
+    lastUpdated = "2006年01月02日 15:04:05"
+
+[sidebar]
+    emoji    = "😭"
+    subtitle = "……"
+    avatar   = "avatar.jpg"
+
+[article]
+    headingAnchor = true
+    math = false
+    readingTime = true
+
+    [article.list]
+        showTags = true
+        
+    [article.license]
+        enabled = true
+        default = "Licensed under CC BY-NC-SA 4.0"
+
+[widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [{ type = "toc" }]
+
+[opengraph.twitter]
+    site = "SiyinoXinyuan"
+    card = "summary_large_image"
+
+[colorScheme]
+    toggle  = true
+    default = "auto"
+
+## Comments
+[comments]
+    enabled  = true
+    provider = "giscus"
+    
+    [comments.giscus]
+        repo             = "siyinoxinyuan/hugo-blog"
+        repoID           = "R_kgDOOcp3oA"
+        category         = "Announcements"
+        categoryID       = "DIC_kwDOOcp3oM4CpSGG"
+        mapping          = "title"
+        lightTheme       = "light"
+        darkTheme        = "dark_dimmed"
+        reactionsEnabled = 1
+        emitMetadata     = 0
+        inputPosition    = "top"
+        lang             = "zh-CN"
+        strict           = 0
+        loading          = "lazy"
+
+    # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
+    # Copy the configurations you need from there and paste it here.
