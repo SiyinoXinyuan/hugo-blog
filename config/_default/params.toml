@@ -14,8 +14,8 @@ SortBy              = "default"
     customText = '本站大部分文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"><b>CC BY-NC-SA 4.0</b></a> 协议进行许可，转载时请注明出处<br>其他情况请依据文章底部许可声明进行使用'
 
 [dateFormat]
-    published   = "2006年01月02日 15:04:05"
-    lastUpdated = "2006年01月02日 15:04:05"
+    published   = ":date_full"
+    lastUpdated = ":date_full"
 
 [sidebar]
     emoji    = "😭"
@@ -24,8 +24,9 @@ SortBy              = "default"
 
 [article]
     headingAnchor = true
-    math = false
+    math = true
     readingTime = true
+    toc = true
 
     [article.list]
         showTags = true
