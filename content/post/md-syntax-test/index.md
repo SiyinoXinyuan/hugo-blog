@@ -29,19 +29,22 @@ System.out.println("Hello to see U!");
 > 标准引用块  
 > 第二行
 
-> [!NOTE]  
+> [!NOTE]
 > 用户应该知道的有用信息，即使是在浏览内容时。
 
-> [!TIP]  
+> [!NOTE] 自定义标题
+> 您还可以为笔记警告提供自定义标题。
+
+> [!TIP]
 > 有用的建议，让事情做得更好或更容易。
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > 用户需要知道的关键信息，以实现他们的目标。
 
-> [!WARNING]  
+> [!WARNING]
 > 需要用户立即注意以避免问题的紧急信息。
 
-> [!CAUTION]  
+> [!CAUTION]
 > 关于某些行为的风险或负面结果的建议。
 
 ![内链图片测试](background.jpg)
