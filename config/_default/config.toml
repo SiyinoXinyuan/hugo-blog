@@ -1,6 +1,6 @@
 # Change baseurl before deploy
 baseURL = 'https://blog.daiyousei.moe/'
-languageCode = 'zh'
+locale = 'zh'
 title = "思忆の心愿的博客"
 theme = 'hugo-theme-stack'
 copyright = 'DAIYOUSEI.MOE | SIYINOXINYUAN | 思忆の心愿'
